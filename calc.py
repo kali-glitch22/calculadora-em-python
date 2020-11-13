@@ -31,7 +31,8 @@ if cac == 1:
         [ 12 ] FATORIAL
         [ 13 ] PRIMOS
         [ 14 ] LIMPAR
-        [ 15 ] SAIR""")
+        [ 15 ] SAIR
+        Aperte uma letra para sair do loop no meio das contas""")
 
             def soma():
                 cs = 0
