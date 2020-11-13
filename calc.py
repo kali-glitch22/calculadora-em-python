@@ -38,7 +38,7 @@ if cac == 1:
                 o = 1
                 while True:
                     try:
-                        n = float(input(f'digite seu {o} numero: '))
+                        n = float(input(f'digite seu {o} numero: '.capitalize()))
                     except:
                         break
                     cs += n
@@ -52,12 +52,12 @@ if cac == 1:
                     if o == 1:
                         try:
                             global n1
-                            n1 = float(input(f'digite seu 1 numero: '))
+                            n1 = float(input(f'digite seu 1 numero: '.capitalize()))
                         except:
                             break
                     elif o != 1:
                         try:
-                            n = float(input(f'digite seu {o} numero: '))
+                            n = float(input(f'digite seu {o} numero: '.capitalize()))
                         except:
                             break
                     k = n1
@@ -73,7 +73,7 @@ if cac == 1:
                 o = 1
                 while True:
                     try:
-                        n = float(input(f'digite seu {o} numero: '))
+                        n = float(input(f'digite seu {o} numero: '.capitalize()))
                     except:
                         break
                     cx *= n
@@ -87,12 +87,12 @@ if cac == 1:
                     if o == 1:
                         try:
                             global n1
-                            n1 = float(input(f'digite seu 1 numero: '))
+                            n1 = float(input(f'digite seu 1 numero: '.capitalize()))
                         except:
                             break
                     elif o != 1:
                         try:
-                            n = float(input(f'digite seu {o} numero: '))
+                            n = float(input(f'digite seu {o} numero: '.capitalize()))
                         except:
                             break
                     k = n1
@@ -105,8 +105,8 @@ if cac == 1:
 
             def expo():
                 try:
-                    o = float(input('digite seu numero: '))
-                    v = int(input('digite seu exponencial: '))
+                    o = float(input('digite seu numero: '.capitalize()))
+                    v = int(input('digite seu exponencial: '.capitalize()))
                 except:
                     print('*-*')
                 cx = o ** v
@@ -115,7 +115,7 @@ if cac == 1:
             def raiz():
                 try:
                     o = float(input('digite seu numero: '))
-                    v = float((input('digite sua raiz: ')))
+                    v = float((input('digite sua raiz: '.capitalize())))
                 except:
                     print('*-*')
                 cx = o ** (1 / v)
@@ -123,7 +123,7 @@ if cac == 1:
 
             def sen():
                 try:
-                    o = float(input('digite seu numero: '))
+                    o = float(input('digite seu numero: '.capitalize()))
                 except:
                     print('*-*')
                 cx = math.sin(o)
@@ -131,7 +131,7 @@ if cac == 1:
 
             def cos():
                 try:
-                    o = float(input('digite seu numero: '))
+                    o = float(input('digite seu numero: '.capitalize()))
                 except:
                     print('*-*')
                 cx = math.cos(o)
@@ -139,7 +139,7 @@ if cac == 1:
 
             def tan():
                 try:
-                    o = float(input('digite seu numero: '))
+                    o = float(input('digite seu numero: '.capitalize()))
                 except:
                     print('*-*')
                 cx = math.tan(o)
@@ -148,7 +148,7 @@ if cac == 1:
             def arccos():
 
                 try:
-                    o = float(input('digite seu numero: '))
+                    o = float(input('digite seu numero: '.capitalize()))
                 except:
                     print('*-*')
                 cx = math.cos(o) ** -1
@@ -157,7 +157,7 @@ if cac == 1:
             def arcsen():
 
                 try:
-                    o = float(input('digite seu numero: '))
+                    o = float(input('digite seu numero: '.capitalize()))
                 except:
                     print('*-*')
                 cx = math.sin(o) ** -1
@@ -173,7 +173,7 @@ if cac == 1:
                 print(cx)
 
             def fact():
-                n = int(input('digite um numero: '))
+                n = int(input('digite um numero: '.capitalize()))
                 cx = math.factorial(n)
                 print(cx)
             def primos():
@@ -207,7 +207,7 @@ if cac == 1:
     [ 15 ] SAIR""")
 
             while True:
-                r = int(input("opção: "))
+                r = int(input("opção: ".capitalize()))
                 if r >= 15:
                     break
                 if r == 0:
