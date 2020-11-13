@@ -23,7 +23,8 @@ class calc:
     [ 10 ] ARCO COSSENO 
     [ 11 ] ARCO TANGENTE
     [ 12 ] FATORIAL
-    [ 13 ] SAIR""")
+    [ 13 ] SAIR
+    DIGITE UMA LETRA NO MEIO DA CONTA PARA ENCERRAR O PROCESSO""")
         def soma():
             cs = 0
             o = 1
