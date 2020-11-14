@@ -189,7 +189,7 @@ if cac == 1:
                 if ss() == 'Windows':
                     system("cls")
                 if ss() == 'Linux':
-                    system("clean")
+                    system("clear")
                 return print("""    [ 0 ] ADIÇÃO 
     [ 1 ] SUBTRAÇÃO 
     [ 2 ] MUTIPLICAÇÃO
