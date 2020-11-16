@@ -263,7 +263,7 @@ if cac == 1:
                 return print('\n', f'arctan({o}) ='.center(12), str(cx).rjust(1))
 
             def fact():
-               n = int(input('digite um numero: '.capitalize()))
+                n = int(input('digite um numero: '.capitalize()))
                 cx = math.factorial(n)
                 print(f'{n}! = ', end='')
                 for l in range(1, n + 1, 1):
