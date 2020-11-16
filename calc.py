@@ -276,10 +276,21 @@ if cac == 1:
             def primos():
                 n = int(input('digite um numero inicial: '.capitalize()))
                 n1 = int(input('digite um numero final: '.capitalize()))
+
+                global cont
+                cont = 0
+                primo = False
                 for c in range(n, n1 + 1):
-                        if c != 1:
-                            if c % 2 != 0 and c % 3 != 0 and c % 4 != 0 and c % 5 != 0 and c % 6 != 0 and c % 7 != 0 and c % 8 != 0 and c % 9 != 0 or c == 2 or c == 3 or c == 5 or c == 7:
-                                print(c)
+                    cont = 0
+                    for x in range(1, n1 + 1):
+                        if c % x == 0:
+                            cont += 1
+                        if cont == 2:
+                            primo = True
+                        else:
+                            primo = False
+                    if primo == True:
+                        print(c)
                 return
             def limpar():
                 if ss() == 'Windows':
