@@ -39,7 +39,8 @@ if cac == 1:
         [ 13 ] PRIMOS
         [ 14 ] LIMPAR
         [ 15 ] LOGARITIMO
-        [ 16 ] SAIR""")
+        [ 16 ] SAIR
+        aperte uma letre e enter para sair do loop no meio da operação""")
 
 
             def soma():
@@ -301,7 +302,8 @@ if cac == 1:
     [ 13 ] PRIMOS
     [ 14 ] LIMPAR
     [ 15 ] LOGARITIMO
-    [ 16 ] SAIR""")
+    [ 16 ] SAIR
+    aperte uma letre e enter para sair do loop no meio da operação""")
             def log():
                 n = float(input('digite o numero: '.capitalize()))
                 b = int(input('digite a base: '.capitalize()))
