@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import math
 from time import sleep
 from concurrent.futures import ThreadPoolExecutor
@@ -39,7 +40,8 @@ if cac == 1:
         [ 13 ] PRIMOS
         [ 14 ] LIMPAR
         [ 15 ] LOGARITIMO
-        [ 16 ] SAIR
+        [ 16 ] MEDIA
+        [ 17 ] SAIR
         aperte uma letre e enter para sair do loop no meio da operação""")
 
 
@@ -313,16 +315,39 @@ if cac == 1:
     [ 13 ] PRIMOS
     [ 14 ] LIMPAR
     [ 15 ] LOGARITIMO
-    [ 16 ] SAIR
+    [ 16 ] MEDIA
+    [ 17 ] SAIR
     aperte uma letre e enter para sair do loop no meio da operação""")
             def log():
                 n = float(input('digite o numero: '.capitalize()))
                 b = int(input('digite a base: '.capitalize()))
                 result = math.log(n, b)
                 return print('\n', f'log({n}) ='.center(12), str(result).rjust(1))
+            def med():
+                global c
+                cs = 0
+                o = 1
+                g = 0
+                a = list()
+                while True:
+                    try:
+                        n = float(input(f'digite seu {o} numero: '.capitalize()))
+                        
+                    except:
+                        
+                        break
+
+                    o += 1
+                    g += 1
+                    cs += n
+                result = cs / g
+
+                
+
+                return print(f'\nmed({cs}) ='.center(12), (str(result).rjust(1)))
             while True:
                 r = int(input("opção: ".capitalize()))
-                if r >= 16:
+                if r >= 17:
                     break
                 if r == 0:
                     soma()
@@ -356,6 +381,8 @@ if cac == 1:
                     limpar()
                 if r == 15:
                     log()
+                if r == 16:
+                    med()
         except:
             print('algo deu errado')
 
